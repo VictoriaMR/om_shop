@@ -1,0 +1,61 @@
+@charset "utf-8";/* CSS Document */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, dd, dl, dt, li, ol, ul,input,select,button,textarea { padding:0; margin:0; border:none;}
+input,button,select,textarea,a,img{outline:none; }/*去掉超链接或按钮点击时出现的虚线框黄色边框*/
+::-moz-focus-inner{border:0;}/*火狐的私有属性去掉点击时边框*/
+article, aside, dialog, figure, footer, header, hgroup, nav, section, blockquote { display: block; }
+ul, ol { list-style: none; }
+img { border: 0 none; vertical-align: top; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+strong, em, i { font-style: normal; font-weight: normal; }
+ins { text-decoration: underline; }
+del { text-decoration: line-through; }
+mark { background: none; }
+input::-ms-clear { display: none !important; }
+a { text-decoration: none; color: #333; }
+a:hover { text-decoration: none; }
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: ".";clear: both;height: 0;}
+* html .clearfix {zoom: 1;}
+*:first-child + html .clearfix {zoom: 1;}
+::-webkit-input-placeholder {color: #dddddd;}
+
+
+
+/*上传图片通用样式*/
+input[type=text]{height:30px;border:1px solid #ddd;box-shadow: 0 0 5px #ddd inset;}
+.upload-ul{ position: relative;overflow: hidden;}
+.up-title {padding-top: 2%;width: 100px;vertical-align: top;}
+.upload-ul .list,.upImg .img-inner{ position: relative; float: left; display: inline-block; width: 66px; height: 66px; margin: 0 10px 10px 0; padding: 0; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; overflow: hidden; }
+.upload-ul li.list {height:auto;display: block;}
+.upload-ul li.list .viewThumb{width: 66px;height: 66px;margin-bottom: 10px;cursor: pointer;}
+.upload-ul li.list input{width:60%;margin-bottom: 0;vertical-align: middle;}
+.upload-ul .fill-img {display: inline-block;padding: 0 6px;background: #41a5e1;color:#fff;height:30px;line-height: 30px;border-radius: 0 5px 5px 0;vertical-align: middle;cursor: default;}
+.pic-list {float: left;}
+.upload-pick {overflow: hidden;}
+.upload-ul .diyStart {background-color: #6dad18;color: white;padding: 5px 10px; border-radius: 3px;}
+.upload-pick,.upImg .img-inner{border:1px dashed #cccccc;border-radius: 5px;}
+.webuploader-pick{position: relative;display: inline-block;vertical-align: top; width: 100%; height: 100%;}
+.webuploader-pick:after,.upImg .add {content: '+';position:absolute;width:30px;height:30px;line-height:27px;left: 50%;top:50%;margin-left: -15px;margin-top: -15px;font-size: 30px;text-align:center;color:#cccccc;}
+.webuploader-container{ position: relative; width: 100%; height: 100%; }
+.webuploader-container label{position: absolute;left: 0;top: 0;width: 100%;}
+.webuploader-element-invisible{opacity: 0;width: 100%;height: 100%;clip: rect(1px 1px 1px 1px);clip: rect(1px,1px,1px,1px);}
+.viewThumb{ position:relative;width: 100%;height: 100%;overflow:hidden;border-radius: .3rem;}
+.viewThumb img{ width: 100%;height: 100%}
+.diyBar{ position: absolute; display:none; top: 0;left: 0;width: 100%;height: 100%;z-index: 3;}
+.diyProgress{ position: absolute;white-space: nowrap; left: 0;width: 100%;height: 24px;line-height:24px;font-size: 12px;text-align: center;color: #FFF;background:rgba(10,168,241,.7); z-index: 3;}
+.diyControl{ position: absolute; display:none; left: 0;bottom: 0;width: 100%;height: 24px;line-height:24px;font-size: 14px;z-index: 5; background:#555555;background:rgba(0,0,0,0.3);}
+.viewThumb:hover .diyControl{ display: block; }
+.diyControl span{ display: inline-block; padding: 6.5px 8px; width: 20px; height: 23px; }
+.diyControl span i{ display: block; width: 12px; height: 11px; opacity: .7; }
+.diyControl span i:hover{ opacity: 1; cursor: pointer; }
+.diyLeft i,.diyCancel i,.diyRight i{background: url(../images/upload-icon1.png) no-repeat;}
+.diyLeft i{background-position: 0 0;}
+.diyCancel i{background-position: 0 -11px;}
+.diyRight i{background-position: 0 -22px }
+.goods-edit .upload-tip{ font: 12px/23px "Microsoft YaHei"; color: #a3a3a3;vertical-align: top; }
+.upImg .img-inner {float: none;}
+.upImg .img-inner img{max-width: 100%;}
+.upImg  {position: relative;width: 66px;height: 66px;}
+.upImg .up-ipt {position: absolute;opacity: 0;width: 66px;height: 66px;left: 0;top:0;z-index: 99;}

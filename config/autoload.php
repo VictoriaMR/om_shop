@@ -3,8 +3,8 @@
  * 自动加载 类
  */
 return [
-    'DB' =>  'om\DB',
-    'view' => 'om\view',
+    'DB' =>  'mvc\DB',
+    'View' => 'mvc\View',
     'Kernel' => 'app\Http\Kernel',
 ];
 

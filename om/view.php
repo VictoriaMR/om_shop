@@ -48,7 +48,12 @@ class view
         foreach($data as $key=>$value) {
 			$$key = $value;
 		}
-		include($tplFile);
+		if (file_exists($tplFile)) {
+			include($tplFile);
+		} else {
+			throw new Exception(str_replace(ROOT_PATH.'app/View/', '', $tplFile) . ' 模板不存在', 1);
+			exit();
+		}
 	}
 
 	public static function jump($tplFile='', $data = [])
